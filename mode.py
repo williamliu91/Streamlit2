@@ -52,10 +52,6 @@ if dark_mode_enabled and current_theme != "Dark":
 elif not dark_mode_enabled and current_theme != "Light":
     set_theme("Light")  # Set to light mode and refresh
 
-# Add a refresh button for manual refresh
-if st.button("Refresh Page"):
-    st.experimental_rerun()  # Refresh the page when clicked
-
 # Display the current theme
 st.write(f"Current theme is: {current_theme}")
 
